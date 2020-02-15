@@ -10,6 +10,7 @@ public class main {
     public static void main(String[] args)
     {
         System.out.println("Host IP Number: " + getIP());
+        System.out.println("Host OS type: " + getOSType());
 
     }
 
@@ -33,5 +34,11 @@ public class main {
         return getIP;
 
     }
-    
+
+    public static String getOSType() {
+
+        return System.getProperty("os.name");
+
+
+    }
 }
